@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <link rel=“icon” href=”favicon.ico” type=“image/x-icon”>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <title>ulogme</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+
+    <script src="js/vendor/jquery-1.8.3.min.js"></script>
+    <script src="js/vendor/spin.min.js"></script>
+    <script src="js/vendor/d3.min.js" charset="utf-8"></script>
+    <script src="js/vendor/underscore.min.js" charset="utf-8"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+    <script src="js/render_utils.js"></script>
+    <script src="js/render_settings.js"></script>
+    <script src="js/d3utils.js" charset="utf-8"></script>
+    <script src="js/ulogme_common.js" charset="utf-8"></script>
+    <script src="js/index.js" charset="utf-8"></script>
+  </head>
+  <body onload="start()">
+    <div class="navbar">
+      <div id="spinnerdiv"></div>
+      <div id="reloadbutton">&#10226;</div>
+      <div><a class="nav-link" href="overview.html">Overview</a></div>
+      <h1>ulogme</h1>
+    </div>
+    <div id="content">
+      <div>
+        <div id="leftarrow" class="arrow">&lt</div>
+        <div id="rightarrow" class="arrow">&gt</div>
+        <div id="header"></div>
+      </div>
+      <div class="container">
+        <div class="blogcontainer">
+          <div id="blogwrap">
+            <div id="blogpre"></div>
+            <div id="blogenter">
+              <textarea id="blogentertxt"></textarea>
+              <button id="blogentersubmit">Submit</button>
+            </div>
+          </div>
+        </div>
+        <div id="keystats"></div>
+        <div id="keygraph"></div>
+        <div id="notesinfo">
+          <div id="notesinfohide">X</div>
+          <div>
+            <div id="notesmsg"></div>
+            <input type="text" id="notetext" />
+            <div id="notesadd">Add</div>
+          </div>
+        </div>
+        <div id="notesvis"></div>
+        <div id="hackingvis"></div>
+        <div id="eventvis"></div>
+        <div id="piechart"></div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,10 @@
+render/event_jsons
+render/js/render_settings.js
+.env
+logs
+*.swp
+*.pyc
+old
+.DS_Store
+.python_pid
+__pycache__
